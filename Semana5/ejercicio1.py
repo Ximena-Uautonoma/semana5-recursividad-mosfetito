@@ -16,13 +16,12 @@ Debe implementar dos funciones:
 
 def contar_ciclo(n):
    lista = []
-    for i in range(1, n + 1):
+   for i in range(1, n + 1):
         lista.append(i)
-    return lista
+        return lista
 
 def contar_recursivo(n):
    if n <= 0:
         return []
-    else:
+   else:
         return contar_recursivo(n - 1) + [n]
-    pass
